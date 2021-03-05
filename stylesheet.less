@@ -512,7 +512,7 @@ select {
 }
 
 .widget.profile form fieldset input
-input[type=submit], button, .btn, a.btn,
+input[type=submit], .widget:not([data-name="row"]) button, .btn, a.btn,
 .widget.signupform fieldset button.btn,
 .widget.paypalbuynow .widget.button.paypal,
 .widget.profile fieldset button.btn,
@@ -580,8 +580,8 @@ a.contentgroup__link {
 	}
 }
 
-button:disabled,
-button.btn:disabled:hover,
+.widget:not([data-name="row"]) button:disabled,
+.widget:not([data-name="row"]) button.btn:disabled:hover,
 .widget.ecomcheckout .checkout-order-button:disabled {
 	background-color: fadeout(@font-swatch7-background-color, 50%);
 	border-color: fadeout(@color-swatch5, 50%);
@@ -1865,7 +1865,7 @@ hr.line.align-right {
    text-decoration: none;
 
    .style--light & {
-        color: fade(@contrast--dark, 80%);
+        color: fade(@contrast--light, 80%);
     }
 
     .style--accent & {
@@ -1882,7 +1882,7 @@ hr.line.align-right {
   display: inline;
 
     .style--light & {
-        color: fade(@contrast--dark, 80%);
+        color: fade(@contrast--light, 80%);
     }
 
     .style--accent & {
@@ -1916,8 +1916,8 @@ hr.line.align-right {
     padding-bottom: 15px;
 
     .style--light & {
-        background-color: fade(@contrast--dark, 80%);
-        color: @contrast--dark;
+        background-color: darken(@color--light, 10%);
+        color: @contrast--light;
     }
 
     .style--accent & {
@@ -1963,7 +1963,7 @@ hr.line.align-right {
     color: @color-swatch3;
 
     .style--light & {
-        color: @contrast--dark;
+        color: @contrast--light;
     }
 
     .style--accent & {
@@ -1980,7 +1980,7 @@ hr.line.align-right {
 	text-decoration: none;
 
     .style--light & {
-        color: @contrast--dark;
+        color: @contrast--light;
     }
 
     .style--accent & {
@@ -1996,7 +1996,7 @@ hr.line.align-right {
 	color: @font-swatch4-color;
 
     .style--light & {
-        color: @contrast--dark;
+        color: @contrast--light;
     }
 
     .style--accent & {
@@ -2012,7 +2012,7 @@ hr.line.align-right {
 	color: @color-swatch3;
 
     .style--light & {
-        color: @contrast--dark;
+        color: @contrast--light;
     }
 
     .style--accent & {
@@ -2028,7 +2028,7 @@ hr.line.align-right {
 	color: @color-swatch3;
 
     .style--light & {
-        color: @contrast--dark;
+        color: @contrast--light;
     }
 
     .style--accent & {
